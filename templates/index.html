@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+{# interactive-widget: on a phone the on-screen keyboard shrinks the page instead of covering it, so
+   the box being typed in, and a dialog's buttons, stay in view above the keyboard. #}
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<title>Quotation Tool</title>
+<link rel="icon" type="image/png" href="/app-assets/favicon.png?v={{ asset_v }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{# The web font is fetched without holding up the first paint: the page draws at once in the
+   fallback face and swaps to Archivo when it arrives (display=swap). As a plain stylesheet it
+   blocked rendering on a round trip to Google on every fresh visit - 180 ms even on a fast
+   connection, before any of the app's own work could show. #}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="/static/style.css?v={{ style_css_v }}">
+</head>
+<body>
+{# While an admin is previewing the app as someone else, this says so on every screen - a
+   preview that looked like the admin's own session would make every refusal look like a bug. #}
+{% if preview %}
+<div class="preview-banner" role="status">
+  <span class="preview-eye" aria-hidden="true"></span>
+  <span class="preview-who">Previewing as <b>{{ preview.email }}</b>
+    <span class="preview-role">{{ preview.role or "member" }}</span></span>
+  <span class="preview-note">You see what they see. Nothing you do is saved - trying something tells you whether they'd be allowed.</span>
+  <button type="button" class="btn small" id="preview-stop">Stop previewing</button>
+</div>
+{% endif %}
+<header class="topbar">
+  <div class="brand"><span class="brand-plate"><img src="/app-assets/logo-web.png?v={{ asset_v }}" alt="" width="57" height="15"></span><span class="brand-name">Quotation Tool</span></div>
+  {# Which tool this session is in, decided server-side at /architectural or /decorative. The
+     two keep separate catalogues and separate BOQs, so it is named in the bar rather than left
+     to be inferred - the screens look alike, and a BOQ built in the wrong one is wasted work. #}
+  <a class="discipline-badge {{ discipline }}" href="/" title="Switch between Architectural and Decorative">
+    {{ discipline|capitalize }} <span aria-hidden="true">&#8646;</span>
+  </a>
+  {# On a phone or a narrow window the tabs do not fit beside the logo, so they fold behind this
+     one button (hidden on a wide screen - see .nav-toggle in style.css). It names the tab you are
+     on, so the bar still says where you are; app.js keeps that name current. #}
+  <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="topbar-menu">
+    <span class="nav-toggle-label" id="nav-toggle-label">Menu</span>
+    <span class="nav-toggle-bars" aria-hidden="true"></span>
+  </button>
+  {# display: contents on a wide screen, so the tabs and the user bar still sit in the top bar's
+     own row exactly as before; on a narrow one this is the menu that drops down below the bar. #}
+  <div class="topbar-menu" id="topbar-menu">
+  <nav>
+    {% if discipline == "decorative" %}
+    {# Decorative products are not specsheet-PDF products, so the Library, Nomenclature and
+       Match tabs - all of which read parsed specsheet fields - have nothing to work on yet. #}
+    <button class="nav-btn" data-view="pricing">Pricing</button>
+    {% if 'boqs.view' in perms %}<button class="nav-btn" data-view="boqs">BOQs</button>{% endif %}
+    <button class="nav-btn" data-view="ask" title="Ask about the products and BOQs in your own words">Ask</button>
+    {% if is_admin %}
+    <div class="nav-group">
+      <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true">Manage</button>
+      <div class="nav-group-menu">
+        <button class="nav-btn" data-view="people" title="Who can use the app, and what each person can do">People</button>
+      </div>
+    </div>
+    {% endif %}
+    {% else %}
+    {# Daily work first, in the order a BOQ is made (DESIGN.md, phase 4); authoring and admin screens
+       sit under Manage. #}
+    {% if 'boqs.view' in perms %}<button class="nav-btn" data-view="boqs">BOQs</button>{% endif %}
+    <button class="nav-btn" data-view="library" title="Every product's spec sheet">Library</button>
+    {# Everyone can look through NPD; changing a product needs "Create and edit products" and
+       changing what it costs needs "Change prices". The server enforces that whatever the page
+       shows - see _required_permission in app/main.py. #}
+    <button class="nav-btn" data-view="match">Match</button>
+    {# Ask (app/assistant.py): always offered. Searches by specification need no AI model; a question
+       that does need one says so if the model is off. #}
+    <button class="nav-btn" data-view="ask" title="Ask about the products and BOQs in your own words">Ask</button>
+    <div class="nav-group">
+      <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true">Manage</button>
+      <div class="nav-group-menu">
+    <button class="nav-btn" data-view="npd" title="New Product Development - every product, its specification and its pricing">NPD</button>
+    {# Each tab is offered only to someone whose permissions let them use it. What a person
+       holds is set per person on the People tab; the server enforces it regardless. #}
+    {# Nomenclature replaced Config Rules (2026-09-28): the product code - how each product's code
+       is built and the abbreviation for every value. The configuration rules themselves still
+       steer the Configurator (they are Exenia's couplings, kept by its importer); only their
+       screen is gone. #}
+    {% if 'config.edit' in perms %}<button class="nav-btn" data-view="nomenclature" title="How each product's code is built, and the abbreviation for every value">Nomenclature</button>{% endif %}
+    {# List Pricing is gone (2026-09-09): pricing is authored per product in NPD now - a base
+       price plus an adder per option - rather than mapped onto products from uploaded price
+       rows, so a tab for doing it the other way would be a second, disagreeing answer to
+       "what does this cost". The uploaded PriceEntry rows are all still there and still read
+       (the accessory and power-supply prices come from them); only the screen is gone. #}
+    {% if 'activity.view' in perms %}
+    <button class="nav-btn" data-view="activity" title="Who did what - every change, sign-in and download">Activity</button>
+    {% endif %}
+    {% if is_admin %}
+    <button class="nav-btn" data-view="people" title="Who can use the app, and what each person can do">People</button>
+    {% endif %}
+      </div>
+    </div>
+    {% endif %}
+  </nav>
+  {# The person menu: who is signed in, and what is about them rather than about the work. #}
+  <div class="user-bar">
+    <div class="person">
+      <button type="button" class="person-btn" aria-expanded="false" aria-haspopup="true" title="{{ me_email }}">
+        <span class="person-initials" aria-hidden="true"></span><span class="person-name">{{ me_email.split('@')[0] }}</span>
+      </button>
+      <div class="person-menu">
+        <span id="user-email" class="person-email">{{ me_email }}</span>
+        {% if real_admin and not preview %}
+        <button type="button" class="person-item" id="preview-as-btn" title="See the app exactly as another account does, without their password">Preview as&hellip;</button>
+        {% endif %}
+        <button class="nav-btn person-item" data-view="help">Help</button>
+        <form method="post" action="/logout"><button type="submit" class="person-item" title="Sign out of this session">Log out</button></form>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+<script>window.DISCIPLINE = {{ discipline|tojson }}; window.IS_ADMIN = {{ is_admin|tojson }};
+  window.REAL_ADMIN = {{ real_admin|tojson }}; window.PREVIEW = {{ preview|tojson }};
+  window.PERMS = {{ perms|tojson }}; window.ME_EMAIL = {{ me_email|tojson }}; window.IS_ADMIN = {{ is_admin|tojson }};
+  window.AI_AVAILABLE = {{ ai_available|tojson }};</script>
+
+<main id="app"></main>
+
+<div id="modal-root"></div>
+
+<script src="/static/app.js?v={{ app_js_v }}"></script>
+</body>
+</html>

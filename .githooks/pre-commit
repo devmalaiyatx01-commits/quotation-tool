@@ -1,0 +1,25 @@
+#!/bin/sh
+# The quick gate before every commit (DEVELOPMENT.md, "Gates"). Turned on once per clone with
+#
+#     git config core.hooksPath .githooks
+#
+# (the setting is shared by every worktree of the clone). A FAIL stops the commit: fix it, don't
+# skip it. The gate reads the working tree, not only what is staged, so an unstaged leftover fails
+# too - stricter than needed, never looser.
+#
+# `git commit --no-verify` skips it. That is for the owner, in an emergency, with the reason
+# written into the change record afterwards - never a way round a FAIL nobody has read.
+
+root=$(git rev-parse --show-toplevel) || exit 1
+
+# A worktree on a commit from before the gate existed has nothing to run.
+[ -f "$root/scripts/maintenance/gate.py" ] || exit 0
+
+# "python" first: on Windows "python3" can be the Microsoft Store stub, which exists but does not run.
+for py in python python3; do
+    if command -v "$py" >/dev/null 2>&1 && "$py" -c "import sys" >/dev/null 2>&1; then
+        exec "$py" "$root/scripts/maintenance/gate.py"
+    fi
+done
+echo "pre-commit: no working Python found, so the gate could not run. Nothing was committed." >&2
+exit 1

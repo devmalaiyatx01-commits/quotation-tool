@@ -1,0 +1,56 @@
+{
+  "recorded": "2026-11-02",
+  "commit": "b970813",
+  "machine": "DESKTOP-R9CN1E7",
+  "platform": "win32",
+  "boq_id": 79,
+  "boq_items": 221,
+  "pictures": 8,
+  "scenarios": {
+    "import": {
+      "peak_mb": 147.1,
+      "after_import_mb": 147.0,
+      "retained_mb": 0.1
+    },
+    "boq_list": {
+      "peak_mb": 154.9,
+      "after_import_mb": 146.6,
+      "retained_mb": 8.2
+    },
+    "boq_open": {
+      "peak_mb": 155.2,
+      "after_import_mb": 146.6,
+      "retained_mb": 8.4
+    },
+    "library": {
+      "peak_mb": 162.3,
+      "after_import_mb": 147.1,
+      "retained_mb": 15.0
+    },
+    "npd_products": {
+      "peak_mb": 181.2,
+      "after_import_mb": 146.7,
+      "retained_mb": 34.3
+    },
+    "export_xlsx": {
+      "peak_mb": 154.5,
+      "after_import_mb": 146.9,
+      "retained_mb": 7.6
+    },
+    "export_pdf": {
+      "peak_mb": 166.5,
+      "after_import_mb": 146.8,
+      "retained_mb": 10.8
+    },
+    "quotation_xlsx": {
+      "peak_mb": 162.0,
+      "after_import_mb": 147.0,
+      "retained_mb": 8.0
+    },
+    "ask_index": {
+      "peak_mb": 185.6,
+      "after_import_mb": 147.0,
+      "retained_mb": 38.5
+    }
+  }
+}

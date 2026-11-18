@@ -1,0 +1,37 @@
+# Binary formats, declared rather than guessed.
+#
+# This checkout has core.autocrlf=true, so Git rewrites LF to CRLF on checkout for every file
+# it believes is text. It decides that by sniffing the first few kilobytes for a NUL byte,
+# which is a guess - and it guesses wrong on a PDF whose streams happen not to be compressed.
+# Three of the weekly-report PDFs here were staged as text (99, 124 and 105 "lines"), meaning
+# a later checkout would have inserted carriage returns into the file and produced a PDF that
+# no longer opens. The catalogue PDFs, which are compressed, were correctly seen as binary -
+# so the failure is silent and only hits some files, which is the worst kind.
+#
+# Naming them stops the sniffing: no line-ending conversion, and no attempt to diff them as
+# text either.
+*.pdf   binary
+*.xlsx  binary
+*.xls   binary
+*.docx  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.dump  binary
+*.zip   binary
+*.tgz   binary
+
+# Batch files must be CRLF. cmd.exe tolerates LF for plain commands but cannot resolve a
+# `goto` label in an LF-only file - it reports "The system cannot find the batch label
+# specified" and the window closes. run.bat had drifted to LF (its siblings had not), which
+# stayed invisible only because it contained no labels until it needed one.
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Shell scripts and git hooks must be LF - the mirror image of the rule above. With CRLF the
+# first line reads "#!/bin/sh\r", and the hook fails with "bad interpreter" (or, worse, runs
+# under a different shell and misbehaves). autocrlf=true would do exactly that on checkout.
+*.sh        text eol=lf
+.githooks/* text eol=lf

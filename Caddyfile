@@ -1,0 +1,29 @@
+# Reverse proxy + HTTPS for the Quotation Tool - the app itself stays bound to 127.0.0.1
+# only (see run.bat / the QuotationTool Windows service), never reachable directly. Caddy is
+# the one thing actually exposed to the LAN, and it's the only thing that needs a firewall
+# rule opened for it (see setup_production_services.ps1).
+#
+# "tls internal" - Caddy generates and manages its own local certificate authority, since
+# this machine has no public domain name to get a normal Let's Encrypt certificate for.
+# Every teammate's browser will show a security warning the first time they visit, because
+# that local CA isn't in their browser's trusted list - click through it (Advanced -> Proceed)
+# same as you would for any internal-only tool with no public certificate. This is still real
+# encryption in transit, just not verified by a public certificate authority - meaningfully
+# better than the plain HTTP this replaced. Exporting Caddy's root CA so it can be installed
+# on every teammate's machine (removing the warning) is a reasonable next step, not required
+# to go live today.
+:443 {
+	tls internal
+
+	# The catalogue listing is 1.5 MB of JSON and app.js another 358 KB, both fetched on
+	# essentially every visit. Compressed they are 126 KB and 97 KB - a tenth of the bytes
+	# over the wire for about 15 ms of CPU here. zstd for browsers that take it, gzip for
+	# the rest.
+	encode zstd gzip
+
+	reverse_proxy 127.0.0.1:8000
+}
+
+:80 {
+	redir https://{host}{uri} permanent
+}

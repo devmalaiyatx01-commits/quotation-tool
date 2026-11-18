@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose a tool &middot; Quotation Tool</title>
+<link rel="icon" type="image/png" href="/app-assets/favicon.png?v={{ asset_v }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{# Loaded without holding up the first paint - see the same note in index.html. #}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="/static/style.css">
+<style>
+  /* Only this page uses these, so they live here rather than growing style.css for one screen. */
+  .choose-wrap { max-width: 780px; margin: 0 auto; padding: 64px 24px 48px; }
+  .choose-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 34px; }
+  .choose-brand img { height: 40px; width: auto; display: block; }
+  .choose-brand span { font-weight: 700; font-size: 20px; letter-spacing: -0.015em; color: var(--ink); }
+  .choose-wrap h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .choose-wrap .lead { color: var(--muted); margin: 0 0 28px; font-size: 14px; }
+  .choose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .choose-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--paper-raised); border: 1px solid var(--line);
+    border-radius: 12px; padding: 22px 22px 20px;
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  }
+  .choose-card:hover {
+    border-color: var(--brown); box-shadow: 0 6px 18px rgba(23, 20, 15, 0.09);
+    transform: translateY(-2px);
+  }
+  .choose-card h2 { font-size: 18px; margin: 0 0 6px; color: var(--ink); }
+  .choose-card p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .choose-icon {
+    width: 42px; height: 42px; border-radius: 10px; margin-bottom: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--brown-wash); color: var(--brown-deep);
+  }
+  .choose-card.decorative .choose-icon { background: var(--moss-wash); color: var(--moss); }
+  .choose-foot { margin-top: 30px; display: flex; align-items: center; gap: 12px; }
+</style>
+</head>
+<body>
+<div class="choose-wrap">
+  <div class="choose-brand">
+    <img src="/app-assets/logo-web.png?v={{ asset_v }}" alt="">
+    <span>Quotation Tool</span>
+  </div>
+
+  <h1>Which tool are you working in?</h1>
+  <p class="lead">Architectural and Decorative keep separate product catalogues and separate
+    BOQs. Nothing you do in one appears in the other.</p>
+
+  <div class="choose-grid">
+    {% if "architectural" in allowed %}
+    <a class="choose-card architectural" href="/architectural">
+      <div class="choose-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 8h18"/><path d="M6 8v3a6 6 0 0 0 12 0V8"/><path d="M12 17v4"/>
+        </svg>
+      </div>
+      <h2>Architectural</h2>
+      <p>Downlights, spotlights, profiles and drivers. Specsheet library, requirement
+        matching, pricing, BOQs and quotations.</p>
+    </a>
+    {% endif %}
+
+    {% if "decorative" in allowed %}
+    <a class="choose-card decorative" href="/decorative">
+      <div class="choose-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v4"/><path d="M5 15a7 7 0 0 1 14 0Z"/><path d="M9 15v2a3 3 0 0 0 6 0v-2"/>
+        </svg>
+      </div>
+      <h2>Decorative</h2>
+      <p>Chandeliers, pendants and feature lighting. Product pricing first, then BOQs and
+        quotations.</p>
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="choose-foot">
+    <form method="post" action="/logout">
+      <button type="submit" class="btn small secondary">Logout</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
