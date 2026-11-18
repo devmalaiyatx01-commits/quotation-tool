@@ -3,6 +3,7 @@ database so there's something to test the BOQ builder against on first run.
 Safe to re-run - skips files that are already in the library.
 """
 import json
+import shutil
 from pathlib import Path
 
 from app.database import Base, engine, SessionLocal, UPLOADS_DIR, IMAGES_DIR
@@ -40,20 +41,98 @@ TYPOLOGY_BY_PRODUCT_NAME = {
 
 
 EXAMPLES = Path(__file__).resolve().parent / "seed_data" / "example_products.json"
+EXAMPLE_IMAGES = EXAMPLES.parent / "images"
+
+# Prototype only: a demo BOQ (floor, room, product, quantity, unit) built from the examples.
+SAMPLE_BOQ = [
+    ("Ground Floor", "Living Room", "CURVE -Midi", 8, "Nos."),
+    ("Ground Floor", "Living Room", "RAYON Linear", 2, "Nos."),
+    ("Ground Floor", "Living Room", "Vena S 10", 12, "Mtr."),
+    ("Ground Floor", "Kitchen", "SOLARA Midi", 4, "Nos."),
+    ("Ground Floor", "Kitchen", "Filo S 05", 6, "Mtr."),
+    ("Outdoor", "Garden", "FLARE -Mini", 6, "Nos."),
+    ("Outdoor", "Garden", "DAWN24 -Midi", 8, "Nos."),
+    ("Outdoor", "Facade", "GLANCE 1000", 5, "Nos."),
+    ("Outdoor", "Pool", "Aura -Midi", 4, "Nos."),
+]
 
 
 def load_example_products(db) -> int:
     """Prototype only: real products parsed from manufacturer spec sheets, up to three per
-    typology, with their specifications and no prices. Loaded once, into an empty library, so a
-    library someone has filled is never touched."""
+    typology, with their specifications and pictures and no prices. Loaded once, into an empty
+    library, so a library someone has filled is never touched."""
     if not EXAMPLES.exists() or db.query(models.Specsheet).count():
         return 0
+    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
     rows = json.loads(EXAMPLES.read_text(encoding="utf-8"))
     for row in rows:
+        diagrams = []
+        for pic in row.pop("images", []):
+            target = IMAGES_DIR / pic["file"]
+            if not target.exists():
+                shutil.copy2(EXAMPLE_IMAGES / pic["file"], target)
+            diagrams.append({"path": str(target), "width": pic["width"], "height": pic["height"],
+                             "label": pic["label"]})
+        if diagrams:
+            row["diagrams"] = diagrams
+            row["image_path"] = diagrams[0]["path"]
         db.add(models.Specsheet(**row))
     db.commit()
-    print(f"loaded {len(rows)} example products (specifications only, no prices)")
+    print(f"loaded {len(rows)} example products with pictures (specifications only, no prices)")
     return len(rows)
+
+
+def _pick(options: dict, key: str, prefer: str = "") -> str:
+    """One value a designer would choose from a product's option list."""
+    values = (options or {}).get(key) or []
+    if prefer and prefer in values:
+        return prefer
+    return values[0] if values else ""
+
+
+def load_sample_boq() -> bool:
+    """Prototype only: a demo BOQ built through the app's own API, so every line is exactly what
+    the screens would create. Skipped when sign-in is on or when any BOQ already exists."""
+    from fastapi.testclient import TestClient
+    from app.main import PROTOTYPE_NO_AUTH, app
+
+    if not PROTOTYPE_NO_AUTH:
+        print("sample BOQ skipped: sign-in is on (PROTOTYPE_AUTH=on)")
+        return False
+    with TestClient(app) as client:
+        if client.get("/api/boqs").json():
+            return False
+        sheets = client.get("/api/specsheets").json()
+        sheets = sheets if isinstance(sheets, list) else sheets.get("items", [])
+        by_name = {}
+        for s in sheets:
+            by_name.setdefault(s.get("product_name", ""), s)
+        # The library list is a summary; the option lists come from the example data itself.
+        options_by_name = {}
+        if EXAMPLES.exists():
+            for row in json.loads(EXAMPLES.read_text(encoding="utf-8")):
+                options_by_name.setdefault(row.get("product_name", ""), row.get("options") or {})
+        boq = client.post("/api/boqs", json={"project_name": "Sample Residence (demo)", "client": "Demo Client",
+                                             "project_code": "DEMO-001", "mode": "detailed"}).json()
+        floors, rooms, added = {}, {}, 0
+        for floor, room, name, qty, unit in SAMPLE_BOQ:
+            sheet = next((s for n, s in by_name.items() if n.startswith(name)), None)
+            if sheet is None:
+                continue
+            if floor not in floors:
+                floors[floor] = client.post(f"/api/boqs/{boq['id']}/floors", json={"name": floor}).json()["id"]
+            if (floor, room) not in rooms:
+                rooms[(floor, room)] = client.post(f"/api/floors/{floors[floor]}/rooms", json={"name": room}).json()["id"]
+            opts = sheet.get("options") or options_by_name.get(sheet.get("product_name", ""), {})
+            added += 1
+            client.post(f"/api/rooms/{rooms[(floor, room)]}/items", json={
+                "specsheet_id": sheet["id"], "item_code": f"L{added}", "make": sheet.get("make", ""),
+                "description": f"{sheet.get('product_name', '')}: {sheet.get('category', '')}",
+                "finish": _pick(opts, "finish"), "wattage": _pick(opts, "wattage"),
+                "beam": _pick(opts, "beam_angle"), "led_color": _pick(opts, "cct", "3000K"),
+                "qty": qty, "unit": unit})
+        print(f"created sample BOQ '{boq.get('project_name', 'Sample Residence (demo)')}' with {added} lines (no prices)")
+        return True
 
 
 def main():
@@ -61,6 +140,7 @@ def main():
     db = SessionLocal()
     try:
         load_example_products(db)
+        load_sample_boq()
         existing = {s.filename for s in db.query(models.Specsheet).all()}
         pdfs = sorted(SAMPLE_DIR.glob("*.pdf"))
         if not pdfs:

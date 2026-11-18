@@ -96,7 +96,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "CURVE -Micro (example).pdf"
+  "filename": "CURVE -Micro (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Curve_Series_p3_1.png",
+    "width": 684,
+    "height": 511
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Curve_Series_p3_2.png",
+    "width": 482,
+    "height": 482
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -189,7 +203,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "SOLARA Midi (example).pdf"
+  "filename": "SOLARA Midi (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Surface_Fixed_DL_-_Solara_Midi_1.png",
+    "width": 289,
+    "height": 387
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Surface_Fixed_DL_-_Solara_Midi_2.png",
+    "width": 283,
+    "height": 379
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -288,7 +316,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "CURVE -Midi (example).pdf"
+  "filename": "CURVE -Midi (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Curve_Series_p9_1.png",
+    "width": 926,
+    "height": 692
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Curve_Series_p9_2.png",
+    "width": 482,
+    "height": 482
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -375,7 +417,63 @@
    ]
   },
   "make": "InHouse",
-  "filename": "MIST 0408SV (example).pdf"
+  "filename": "MIST 0408SV (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "MIST_0408SV_1.png",
+    "width": 593,
+    "height": 374
+   },
+   {
+    "label": "Additional Diagram 3",
+    "file": "MIST_0408SV_3.png",
+    "width": 787,
+    "height": 410
+   },
+   {
+    "label": "Accessory 1",
+    "file": "profiles_14_accessory1.png",
+    "width": 137,
+    "height": 151
+   },
+   {
+    "label": "Accessory 2",
+    "file": "profiles_14_accessory2.png",
+    "width": 147,
+    "height": 137
+   },
+   {
+    "label": "Accessory 3",
+    "file": "profiles_14_accessory3.png",
+    "width": 139,
+    "height": 218
+   },
+   {
+    "label": "Accessory 4",
+    "file": "profiles_14_accessory4.png",
+    "width": 143,
+    "height": 137
+   },
+   {
+    "label": "Accessory 5",
+    "file": "profiles_14_accessory5.png",
+    "width": 83,
+    "height": 89
+   },
+   {
+    "label": "Accessory 6",
+    "file": "profiles_14_accessory6.png",
+    "width": 125,
+    "height": 63
+   },
+   {
+    "label": "Accessory 7",
+    "file": "profiles_14_accessory7.png",
+    "width": 123,
+    "height": 63
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -462,7 +560,27 @@
    ]
   },
   "make": "InHouse",
-  "filename": "Filo S 05 - LL 106001 (example).pdf"
+  "filename": "Filo S 05 - LL 106001 (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Filo_S_05_1.png",
+    "width": 784,
+    "height": 297
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Filo_S_05_2.png",
+    "width": 231,
+    "height": 202
+   },
+   {
+    "label": "Profile 1",
+    "file": "profiles_2_profile1.png",
+    "width": 177,
+    "height": 159
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -550,7 +668,45 @@
    ]
   },
   "make": "InHouse",
-  "filename": "Vena S 10 - LL 106001 (example).pdf"
+  "filename": "Vena S 10 - LL 106001 (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Vena_S_10_-_60LEDS_per_M_-_Diifuser_1.png",
+    "width": 560,
+    "height": 390
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Vena_S_10_-_60LEDS_per_M_-_Diifuser_2.png",
+    "width": 1145,
+    "height": 225
+   },
+   {
+    "label": "Profile 1",
+    "file": "profiles_20_profile1.png",
+    "width": 146,
+    "height": 147
+   },
+   {
+    "label": "Profile 2",
+    "file": "profiles_20_profile2.png",
+    "width": 147,
+    "height": 145
+   },
+   {
+    "label": "Profile 3",
+    "file": "profiles_20_profile3.png",
+    "width": 175,
+    "height": 135
+   },
+   {
+    "label": "Profile 4",
+    "file": "profiles_20_profile4.png",
+    "width": 185,
+    "height": 117
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -644,7 +800,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "FLARE -Mini (example).pdf"
+  "filename": "FLARE -Mini (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "FLARE_MINI_1.png",
+    "width": 216,
+    "height": 249
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "FLARE_MINI_2.png",
+    "width": 357,
+    "height": 350
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -740,7 +910,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "RAYON Linear –LL103003 (example).pdf"
+  "filename": "RAYON Linear –LL103003 (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "RAYON_48V_DC_Track_Linear_1.png",
+    "width": 448,
+    "height": 436
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "RAYON_48V_DC_Track_Linear_2.png",
+    "width": 448,
+    "height": 426
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -838,7 +1022,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "Aura -Midi (example).pdf"
+  "filename": "Aura -Midi (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Aura_Series_p2_1.png",
+    "width": 329,
+    "height": 322
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Aura_Series_p2_2.png",
+    "width": 464,
+    "height": 334
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -934,7 +1132,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "Riva -Midi (example).pdf"
+  "filename": "Riva -Midi (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "Riva_Midi_1.png",
+    "width": 262,
+    "height": 410
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "Riva_Midi_2.png",
+    "width": 375,
+    "height": 410
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1027,7 +1239,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "TIDE 1617 SV (example).pdf"
+  "filename": "TIDE 1617 SV (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "TIDE_1617SV_1.png",
+    "width": 610,
+    "height": 419
+   },
+   {
+    "label": "Additional Diagram 3",
+    "file": "TIDE_1617SV_3.png",
+    "width": 557,
+    "height": 312
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1121,7 +1347,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "DAWN24 -Midi (example).pdf"
+  "filename": "DAWN24 -Midi (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "DAWN_Series_p3_1.png",
+    "width": 301,
+    "height": 395
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "DAWN_Series_p3_2.png",
+    "width": 392,
+    "height": 529
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1215,7 +1455,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "DAWN24 -Mini (example).pdf"
+  "filename": "DAWN24 -Mini (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "DAWN_Series_p1_1.png",
+    "width": 266,
+    "height": 350
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "DAWN_Series_p1_2.png",
+    "width": 485,
+    "height": 523
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1309,7 +1563,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "DAWN24 -Small (example).pdf"
+  "filename": "DAWN24 -Small (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "DAWN_Series_p2_1.png",
+    "width": 287,
+    "height": 377
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "DAWN_Series_p2_2.png",
+    "width": 352,
+    "height": 575
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1409,7 +1677,21 @@
    ]
   },
   "make": "InHouse",
-  "filename": "GLANCE 1000 (example).pdf"
+  "filename": "GLANCE 1000 (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "GLANCE_1000_1.png",
+    "width": 545,
+    "height": 426
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "GLANCE_1000_2.png",
+    "width": 545,
+    "height": 362
+   }
+  ]
  },
  {
   "discipline": "architectural",
@@ -1495,6 +1777,26 @@
    ]
   },
   "make": "InHouse",
-  "filename": "SERA 1910 TV (example).pdf"
+  "filename": "SERA 1910 TV (example).pdf",
+  "images": [
+   {
+    "label": "Product Image",
+    "file": "SERA_1910_TV_1__1.png",
+    "width": 833,
+    "height": 833
+   },
+   {
+    "label": "Additional Diagram 2",
+    "file": "SERA_1910_TV_1__2.png",
+    "width": 1012,
+    "height": 352
+   },
+   {
+    "label": "Additional Diagram 3",
+    "file": "SERA_1910_TV_1__3.png",
+    "width": 545,
+    "height": 117
+   }
+  ]
  }
 ]

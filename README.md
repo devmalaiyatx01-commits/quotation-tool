@@ -111,8 +111,11 @@ administrator (`demo@example.com`).
 
 `seed.py` fills an empty library with **16 real example products across 8 typologies** (downlight,
 spotlight, track light, uplight, flexible strip, flexible neon band, wall grazer, underwater),
-parsed by the app's own spec sheet reader. They carry specifications only: no prices, no PDFs or
-pictures, and the brand shows as "InHouse". Upload any manufacturer spec sheet PDF to add more.
+parsed by the app's own spec sheet reader, with their product pictures and drawings. They carry
+specifications only: no prices and no PDFs, and the brand shows as "InHouse". It also builds a
+**sample BOQ**, "Sample Residence (demo)": 2 floors, 5 rooms and 9 lines (downlights, track,
+strips, spotlights, uplights, a grazer and pool lights), created through the app's own API, so you
+can open it and export it to Excel or PDF straight away. Upload any spec sheet PDF to add more.
 
 * **Sign-in back on:** set `PROTOTYPE_AUTH=on`, create a user with `python create_user.py`, and the
   original password and Google sign-in work exactly as in production. Sign-in is always on when
