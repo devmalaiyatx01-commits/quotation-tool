@@ -4,9 +4,11 @@ A web app I built and shipped during my internship at a lighting design studio i
 (Jul 2026 to present). It replaced the studio's manual quoting process and has been used daily by
 its architectural and decorative lighting teams since September 2026.
 
-This repository is a cleaned copy of the production code. The company and its in-house brand are
-renamed ("the studio", "InHouse"), every product price and price list is removed, and client
-documents, vendor PDFs, internal runbooks and the production database are left out.
+> **This repository is a prototype of the original project, excluding the company's confidential
+> information.** It keeps the architecture and logic of the production app, but the company and its
+> in-house brand are renamed ("the studio", "InHouse"), every product price and price list is
+> removed, client documents, vendor PDFs, internal runbooks and the production database are left
+> out, and sign-in is switched off so it can be tried locally in a minute.
 
 ## The problem
 
@@ -31,7 +33,7 @@ spreadsheets. Mapping the workflow end to end showed four failure points:
 | Exports | Excel and PDF BOQs and quotations that match the studio's existing documents. |
 | Excel import | Reads a BOQ that went out as Excel and came back edited, by column meaning rather than position, and links each line to a product or marks it "to check". |
 | Requirement matching | Reads a client's requirement document and matches each fixture to products; an optional LLM fills only the fields the rules missed. |
-| Access | Google sign-in restricted to the company domain (checked in code), two roles, one central permission check, an append-only activity log. |
+| Access | Google sign-in restricted to the company domain (checked in code), two roles, one central permission check, an append-only activity log. Switched off in this prototype by default (see below). |
 | Phones and tablets | Every screen fits the device: same features, rearranged, no sideways scrolling. |
 
 ## Architecture
@@ -93,15 +95,20 @@ first, and production deploys approved change by change.
 
 ```bash
 pip install -r requirements.txt
-set SESSION_SECRET=any-long-random-string          # PowerShell: $env:SESSION_SECRET="..."
 python seed.py                                     # creates data/app.db (SQLite) on first run
-python create_user.py                              # email, password, role (admin or member)
-python -m uvicorn app.main:app --reload            # http://127.0.0.1:8000
+python -m uvicorn app.main:app --reload            # open http://127.0.0.1:8000
 ```
 
-Set `DATABASE_URL` to a PostgreSQL DSN to use Postgres instead; no code change is needed. Google
-sign-in turns on when `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` are set (see
-`GoogleAuthSetup.md`). The library starts empty: upload a manufacturer spec sheet PDF to begin.
+No account is needed: in this prototype every visitor is signed in automatically as a local demo
+administrator (`demo@example.com`). The library starts empty: upload a manufacturer spec sheet PDF
+to begin.
+
+* **Sign-in back on:** set `PROTOTYPE_AUTH=on`, create a user with `python create_user.py`, and the
+  original password and Google sign-in work exactly as in production. Sign-in is always on when
+  `ENVIRONMENT=production`, so do not deploy this prototype anywhere public without it.
+* **Postgres:** set `DATABASE_URL` to a PostgreSQL DSN instead of the default SQLite file; no code
+  change is needed. Google sign-in needs `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` (see
+  `GoogleAuthSetup.md`).
 
 ## Not in this copy
 

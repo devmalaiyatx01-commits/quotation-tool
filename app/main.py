@@ -91,6 +91,14 @@ if not SESSION_SECRET:
         raise RuntimeError("SESSION_SECRET must be set in the environment before running with ENVIRONMENT=production - see deployment.md step 5.")
     SESSION_SECRET = "dev-only-insecure-secret-change-me"
 
+# Prototype mode (this public copy only): sign-in is switched off so anyone can try the app
+# locally without creating an account. Every visitor is treated as a local demo administrator.
+# PROTOTYPE_AUTH=on restores the original sign-in (password or Google) unchanged, and it is
+# always on under ENVIRONMENT=production, so a real deployment can never run without sign-in.
+PROTOTYPE_NO_AUTH = (os.environ.get("PROTOTYPE_AUTH", "off").lower() not in ("on", "1", "true")
+                     and os.environ.get("ENVIRONMENT") != "production")
+DEMO_EMAIL = "demo@example.com"
+
 app = FastAPI(title="Quotation Tool")
 
 
@@ -458,11 +466,32 @@ def _email_of(user_id):
         db.close()
 
 
+def _demo_user():
+    """(id, role) of the local demo administrator used while sign-in is off; created on first
+    use with a random password nobody knows, so it can never be signed into from the login form."""
+    import secrets
+    from app.auth import hash_password
+    db = SessionLocal()
+    try:
+        user = db.query(models.User).filter(models.User.email == DEMO_EMAIL).first()
+        if not user:
+            user = models.User(email=DEMO_EMAIL, password_hash=hash_password(secrets.token_urlsafe(32)),
+                               role="admin")
+            db.add(user)
+            db.commit()
+            db.refresh(user)
+        return user.id, user.role or "admin"
+    finally:
+        db.close()
+
+
 class AuthGuardMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         path = request.url.path
         if path in _PUBLIC_PATHS or path.startswith(_PUBLIC_PREFIXES):
             return await call_next(request)
+        if PROTOTYPE_NO_AUTH and not request.session.get("user_id"):
+            request.session["user_id"], request.session["role"] = _demo_user()
         if not request.session.get("user_id"):
             if path.startswith("/api/") or path.startswith("/media/"):
                 return JSONResponse({"detail": "Not authenticated"}, status_code=401)
@@ -846,7 +875,7 @@ def favicon():
 
 @app.get("/login", response_class=HTMLResponse)
 def login_page(request: Request, error: str = ""):
-    if request.session.get("user_id"):
+    if PROTOTYPE_NO_AUTH or request.session.get("user_id"):
         return RedirectResponse(url="/")
     return templates.TemplateResponse(request, "login.html", {"error": error, "google_configured": GOOGLE_CONFIGURED,
                                                               "asset_v": _asset_version()})
