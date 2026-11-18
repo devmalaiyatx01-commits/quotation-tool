@@ -22,6 +22,13 @@ spreadsheets. Mapping the workflow end to end showed four failure points:
 3. **Prices kept apart from products.** Prices lived in separate sheets and drifted out of sync.
 4. **Documents re-typed.** The final BOQ and quotation were rebuilt by hand in the studio's format.
 
+## Results
+
+* About **50% less time** to prepare a quotation than copy-pasting from spec sheets and price
+  lists, with fewer errors.
+* An activity log lets admins see each person's quoting work and score the team on output.
+* In daily use by the studio's architectural and decorative teams since September 2026.
+
 ## What it does
 
 | Area | What it does |
