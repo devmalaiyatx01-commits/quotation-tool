@@ -1,0 +1,1500 @@
+[
+ {
+  "discipline": "architectural",
+  "category": "Recessed LED Downlight –Adjustable –With Trim",
+  "typology": "Downlight",
+  "product_name": "CURVE -Micro",
+  "series": "CURVE",
+  "family": "Micro",
+  "variant": "With Trim",
+  "environment": [],
+  "page_number": 3,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "CUTOUTDIMENSIONS": "45 mm",
+    "TRIM DETAILS": "WITH TRIM",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FINISH": "WHITE / BLACK",
+    "ADJUSTABILITY": "ADJUSTABLE",
+    "IPRATING": "IP20",
+    "IKRATING": "-",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "REFLECTOR FINISH": "MATTE WHITE / MATTE BLACK",
+    "BEAMANGLE": "15°/ 24°/ 36°/ 55°",
+    "UGR": "<11",
+    "ACCESSORIES": "NIL"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@50,000hrs.",
+    "ACTUALPOWER": "7W / 9W",
+    "LUMENPACKAGE": "610 lm/ 780lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 95 (R9 > 90)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/ CONTROLGEAR": "REMOTE",
+    "POWER": "8W / 10W",
+    "C.C/ C.V": "C.C",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "cutout_dimensions": "45 mm",
+   "trim_details": "WITH TRIM",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "WHITE / BLACK",
+   "adjustability": "ADJUSTABLE",
+   "ip_rating": "IP20",
+   "ik_rating": "-",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "reflector_finish": "MATTE WHITE / MATTE BLACK",
+   "beam_angle": "15°/ 24°/ 36°/ 55°",
+   "ugr": "<11",
+   "accessories": "NIL",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@50,000hrs.",
+   "wattage": "7W / 9W",
+   "lumen_package": "610 lm/ 780lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 95 (R9 > 90)",
+   "control_gear": "REMOTE",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "WHITE",
+    "BLACK"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°",
+    "55°"
+   ],
+   "wattage": [
+    "7W",
+    "9W"
+   ],
+   "ip_rating": [
+    "IP20"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "CURVE -Micro (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Surface LED Downlight –Fixed",
+  "typology": "Downlight",
+  "product_name": "SOLARA Midi",
+  "series": "SOLARA Midi",
+  "family": "",
+  "variant": "Fixed",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FINISH": "BLACK",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP54",
+    "IKRATING": "-",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "15°/ 24°/ 36°",
+    "UGR": "<16",
+    "ACCESSORIES": "NIL / HONEYCOMB LOUVRE / SOFTENING LENS"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@50,000hrs.",
+    "ACTUALPOWER": "12W",
+    "LUMENPACKAGE": "1200 lm",
+    "CCT": "3000K / 4000K",
+    "CRI": "> 90"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/ CONTROLGEAR": "INTEGRATED",
+    "CONTROL": "ON –OFF",
+    "C.C/ C.V": "–",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "–",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "BLACK",
+   "adjustability": "FIXED",
+   "ip_rating": "IP54",
+   "ik_rating": "-",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "15°/ 24°/ 36°",
+   "ugr": "<16",
+   "accessories": "NIL / HONEYCOMB LOUVRE / SOFTENING LENS",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@50,000hrs.",
+   "wattage": "12W",
+   "lumen_package": "1200 lm",
+   "cct": "3000K / 4000K",
+   "cri": "> 90",
+   "control_gear": "INTEGRATED",
+   "control": "ON –OFF",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "BLACK"
+   ],
+   "cct": [
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°"
+   ],
+   "wattage": [
+    "12W"
+   ],
+   "control": [
+    "ON –OFF"
+   ],
+   "ip_rating": [
+    "IP54"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "SOLARA Midi (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Recessed LED Downlight –Adjustable –With Trim",
+  "typology": "Downlight",
+  "product_name": "CURVE -Midi",
+  "series": "CURVE",
+  "family": "Midi",
+  "variant": "With Trim",
+  "environment": [],
+  "page_number": 9,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "CUTOUTDIMENSIONS": "75 mm",
+    "TRIM DETAILS": "WITH TRIM",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FINISH": "WHITE / BLACK",
+    "ADJUSTABILITY": "ADJUSTABLE",
+    "IPRATING": "IP20",
+    "IKRATING": "-",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "REFLECTOR FINISH": "MATTE WHITE / MATTE BLACK",
+    "BEAMANGLE": "15°/ 24°/ 36°/ 55°",
+    "UGR": "<11",
+    "ACCESSORIES": "NIL"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@50,000hrs.",
+    "ACTUALPOWER": "12W / 18W",
+    "LUMENPACKAGE": "1040 lm/ 1550 lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 95 (R9 > 90)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/ CONTROLGEAR": "REMOTE",
+    "POWER": "14W / 20W",
+    "C.C/ C.V": "C.C",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "cutout_dimensions": "75 mm",
+   "trim_details": "WITH TRIM",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "WHITE / BLACK",
+   "adjustability": "ADJUSTABLE",
+   "ip_rating": "IP20",
+   "ik_rating": "-",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "reflector_finish": "MATTE WHITE / MATTE BLACK",
+   "beam_angle": "15°/ 24°/ 36°/ 55°",
+   "ugr": "<11",
+   "accessories": "NIL",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@50,000hrs.",
+   "wattage": "12W / 18W",
+   "lumen_package": "1040 lm/ 1550 lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 95 (R9 > 90)",
+   "control_gear": "REMOTE",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "WHITE",
+    "BLACK"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°",
+    "55°"
+   ],
+   "wattage": [
+    "12W",
+    "18W"
+   ],
+   "ip_rating": [
+    "IP20"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "CURVE -Midi (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Flexible Homogeneous LED Band ( Side Bend )",
+  "typology": "Flexible Neon / LED Band",
+  "product_name": "MIST 0408SV",
+  "series": "MIST 0408SV",
+  "family": "",
+  "variant": "",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "GENERAL PARAMETERS": {
+    "MOUNTING": "SURFACE",
+    "BENDING DIRECTION": "SIDE BENDING",
+    "MATERIAL": "DIRT RESISTANT SILICONE CO-EXTRUSION",
+    "MINIMUM CUT LENGTH": "50mm",
+    "CONTINUOUS RUN": "5 METER (STANDARD)",
+    "IPRATING": "IP65",
+    "IKRATING": "IK06",
+    "OPERATINGTEMPERATURE": "-20°CTO+50°C",
+    "ACCESSORIES": "MOUNTING CLIPS / ALUMINIUM PROFILE / END CAPS",
+    "CABLE LEAD OPTION": "FRONT ENTRY / CLOSED END CAP"
+   },
+   "SOURCEPARAMETERS": {
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "6W/M",
+    "LUMENPACKAGE": "219lm/M",
+    "CCT": "2700K / 3000K / 4000K / 6000K",
+    "CRI": "> 90 (R9 > 80)",
+    "BEAM ANGLE": "120°"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "CONTROL": "ON-OFF / 0-10V / DALI",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE",
+   "material": "DIRT RESISTANT SILICONE CO-EXTRUSION",
+   "ip_rating": "IP65",
+   "ik_rating": "IK06",
+   "operating_temperature": "-20°CTO+50°C",
+   "accessories": "MOUNTING CLIPS / ALUMINIUM PROFILE / END CAPS",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "6W/M",
+   "lumen_package": "219lm/M",
+   "cct": "2700K / 3000K / 4000K / 6000K",
+   "cri": "> 90 (R9 > 80)",
+   "beam_angle": "120°",
+   "control_gear": "REMOTE (24V DC)",
+   "control": "ON-OFF / 0-10V / DALI",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K",
+    "6000K"
+   ],
+   "beam_angle": [
+    "120°"
+   ],
+   "wattage": [
+    "6W/M"
+   ],
+   "control": [
+    "ON-OFF",
+    "0-10V",
+    "DALI"
+   ],
+   "ip_rating": [
+    "IP65"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "MIST 0408SV (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Flexible COB Strip (Standard)",
+  "typology": "Flexible Strip Light",
+  "product_name": "Filo S 05 - LL 106001",
+  "series": "Filo S 05 - LL 106001",
+  "family": "",
+  "variant": "",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "GENERAL PARAMETERS": {
+    "LED TYPE": "COB LED",
+    "MINIMUM CUT LENGTH": "50mm",
+    "CONTINUOUS RUN": "5 Meter (Standard)",
+    "LED NUMBER": "480 LEDs/M",
+    "IP RATING": "IP20 / IP65",
+    "IK RATING": "-",
+    "OPERATING TEMPERATURE": "-25°C TO +50°C",
+    "ACCESSORIES": "NIL / ‘U’-SHAPE PROFILE",
+    "PROFILE DIMENSION": "08mm X 06mm"
+   },
+   "SOURCE PARAMETERS": {
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMEN MAINTENANCE": "L80B50 @ 50,000hrs.",
+    "ACTUAL POWER": "5 W/M",
+    "LUMEN PACKAGE": "575 lm/M",
+    "CCT": "2700K, 3000K, 4000K",
+    "CRI": "> 90 (R9 > 90)",
+    "BEAM ANGLE": "120°"
+   },
+   "POWER SUPPLY PARAMETERS": {
+    "BALLAST / CONTROL GEAR": "REMOTE (24V DC)",
+    "CONTROL": "ON-OFF / 0-10 / DALI",
+    "C.C / C.V": "C.V",
+    "INPUT VOLTAGE": "220V AC - 240V AC",
+    "POWER FACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IP RATING": "IP20",
+    "OVERALL WARRANTY": "2 YEARS"
+   }
+  },
+  "fields": {
+   "led_type": "COB LED",
+   "led_number": "480 LEDs/M",
+   "ip_rating": "IP20 / IP65",
+   "ik_rating": "-",
+   "operating_temperature": "-25°C TO +50°C",
+   "accessories": "NIL / ‘U’-SHAPE PROFILE",
+   "profile_dimension": "08mm X 06mm",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B50 @ 50,000hrs.",
+   "wattage": "5 W/M",
+   "lumen_package": "575 lm/M",
+   "cct": "2700K, 3000K, 4000K",
+   "cri": "> 90 (R9 > 90)",
+   "beam_angle": "120°",
+   "control_gear": "REMOTE (24V DC)",
+   "control": "ON-OFF / 0-10 / DALI",
+   "input_voltage": "220V AC - 240V AC",
+   "warranty": "2 YEARS"
+  },
+  "options": {
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "120°"
+   ],
+   "wattage": [
+    "5 W/M"
+   ],
+   "control": [
+    "ON-OFF",
+    "0-10",
+    "DALI"
+   ],
+   "ip_rating": [
+    "IP20",
+    "IP65"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "Filo S 05 - LL 106001 (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Flexible LED Strip (Standard)",
+  "typology": "Flexible Strip Light",
+  "product_name": "Vena S 10 - LL 106001",
+  "series": "Vena S 10 - LL 106001",
+  "family": "",
+  "variant": "",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "GENERAL PARAMETERS": {
+    "LED TYPE": "2835 LED",
+    "MINIMUM CUT LENGTH": "100mm",
+    "CONTINUOUS RUN": "5 Meter (Standard)",
+    "LED NUMBER": "60 LED/M",
+    "IP RATING": "IP20 / IP66",
+    "IK RATING": "-",
+    "OPERATING TEMPERATURE": "-25°C TO +50°C",
+    "ACCESSORIES": "NIL / ‘U’-SHAPE PROFILE / TRIANGULAR PROFILE / DIFFUSER",
+    "PROFILE DIMENSION": "17mm X 15mm / 7mm X 17mm / 16mm X 16mm"
+   },
+   "SOURCE PARAMETERS": {
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMEN MAINTENANCE": "L80B50 @ 50,000hrs.",
+    "ACTUAL POWER": "10W/M",
+    "LUMEN PACKAGE": "800 lm\\M",
+    "CCT": "2700K, 3000K, 4000K, 6500K",
+    "CRI": "> 90",
+    "BEAM ANGLE": "120°"
+   },
+   "POWER SUPPLY PARAMETERS": {
+    "BALLAST / CONTROL GEAR": "REMOTE (24V DC)",
+    "CONTROL": "ON-OFF / 0-10 / DALI",
+    "C.C / C.V": "C.V",
+    "INPUT VOLTAGE": "220V AC - 240V AC",
+    "POWER FACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IP RATING": "IP20",
+    "OVERALL WARRANTY": "2 YEARS"
+   }
+  },
+  "fields": {
+   "led_type": "2835 LED",
+   "led_number": "60 LED/M",
+   "ip_rating": "IP20 / IP66",
+   "ik_rating": "-",
+   "operating_temperature": "-25°C TO +50°C",
+   "accessories": "NIL / ‘U’-SHAPE PROFILE / TRIANGULAR PROFILE / DIFFUSER",
+   "profile_dimension": "17mm X 15mm / 7mm X 17mm / 16mm X 16mm",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B50 @ 50,000hrs.",
+   "wattage": "10W/M",
+   "lumen_package": "800 lm\\M",
+   "cct": "2700K, 3000K, 4000K, 6500K",
+   "cri": "> 90",
+   "beam_angle": "120°",
+   "control_gear": "REMOTE (24V DC)",
+   "control": "ON-OFF / 0-10 / DALI",
+   "input_voltage": "220V AC - 240V AC",
+   "warranty": "2 YEARS"
+  },
+  "options": {
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K",
+    "6500K"
+   ],
+   "beam_angle": [
+    "120°"
+   ],
+   "wattage": [
+    "10W/M"
+   ],
+   "control": [
+    "ON-OFF",
+    "0-10",
+    "DALI"
+   ],
+   "ip_rating": [
+    "IP20",
+    "IP66"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "Vena S 10 - LL 106001 (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "LED Spotlight –Adjustable",
+  "typology": "Spotlight",
+  "product_name": "FLARE -Mini",
+  "series": "FLARE",
+  "family": "Mini",
+  "variant": "Adjustable",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "SURFACE",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "BLACK",
+    "ADJUSTABILITY": "ADJUSTABLE",
+    "IPRATING": "IP66",
+    "IKRATING": "IK08",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS",
+    "LENS MATERIAL": "POLYMER OPTIC LENS",
+    "BEAMANGLE": "10°/ 15°/ 25°/ 30°/ 50°/ 60°/ 80°",
+    "ACCESSORIES": "NIL / HONEYCOMB / SNOOT / EXTENSION ARM / GROUND SPIKE / SURFACE MOUNT BASE"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "10W",
+    "LUMENPACKAGE": "1100 lm",
+    "CCT": "2700K / 3000K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC) OR INTEGRATED",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "BLACK",
+   "adjustability": "ADJUSTABLE",
+   "ip_rating": "IP66",
+   "ik_rating": "IK08",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS",
+   "beam_angle": "10°/ 15°/ 25°/ 30°/ 50°/ 60°/ 80°",
+   "accessories": "NIL / HONEYCOMB / SNOOT / EXTENSION ARM / GROUND SPIKE / SURFACE MOUNT BASE",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "10W",
+   "lumen_package": "1100 lm",
+   "cct": "2700K / 3000K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (24V DC) OR INTEGRATED",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "BLACK"
+   ],
+   "cct": [
+    "2700K",
+    "3000K"
+   ],
+   "beam_angle": [
+    "10°",
+    "15°",
+    "25°",
+    "30°",
+    "50°",
+    "60°",
+    "80°"
+   ],
+   "wattage": [
+    "10W"
+   ],
+   "ip_rating": [
+    "IP66"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "FLARE -Mini (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Track Linear–48V DC",
+  "typology": "Track Light",
+  "product_name": "RAYON Linear –LL103003",
+  "series": "RAYON Linear –LL103003",
+  "family": "",
+  "variant": "48V DC",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FINISH": "BLACK",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP20",
+    "IKRATING": "-",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "15°/ 24°/ 36°",
+    "UGR": "<13",
+    "ACCESSORIES": "NIL"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@50,000hrs.",
+    "ACTUALPOWER": "12W",
+    "LUMENPACKAGE": "960 lm",
+    "CCT": "2700K / 3000K / 3500K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/ CONTROLGEAR": "REMOTE (48V DC)",
+    "CONTROL": "ON –OFF / 0-10 / DALI",
+    "C.C/ C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "BLACK",
+   "adjustability": "FIXED",
+   "ip_rating": "IP20",
+   "ik_rating": "-",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "15°/ 24°/ 36°",
+   "ugr": "<13",
+   "accessories": "NIL",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@50,000hrs.",
+   "wattage": "12W",
+   "lumen_package": "960 lm",
+   "cct": "2700K / 3000K / 3500K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (48V DC)",
+   "control": "ON –OFF / 0-10 / DALI",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "BLACK"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "3500K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°"
+   ],
+   "wattage": [
+    "12W"
+   ],
+   "control": [
+    "ON –OFF",
+    "0-10",
+    "DALI"
+   ],
+   "ip_rating": [
+    "IP20"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "RAYON Linear –LL103003 (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Underwater Recessed LED Spot –Fixed –24VDC",
+  "typology": "Underwater Fixture",
+  "product_name": "Aura -Midi",
+  "series": "Aura",
+  "family": "Midi",
+  "variant": "24VDC",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 2,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "FLOOR / WALL RECESSED (UNDERWATER)",
+    "MATERIAL": "SUS 316L STAINLESS STEEL SLEEVE",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "STAINLESS STEEL",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP68",
+    "IKRATING": "IK09",
+    "OPERATINGTEMPERATURE": "-20°CTO+40°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "10°/15°/25°/45°/60°/120°",
+    "ACCESSORIES": "NIL"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L70B20@50,000hrs.",
+    "ACTUALPOWER": "8W",
+    "LUMENPACKAGE": "450lm",
+    "CCT": "2700K / 3000K / 4000K / 6500K / RGB / RGBW",
+    "CRI": "> 80"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "2 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "FLOOR / WALL RECESSED (UNDERWATER)",
+   "material": "SUS 316L STAINLESS STEEL SLEEVE",
+   "finish": "STAINLESS STEEL",
+   "adjustability": "FIXED",
+   "ip_rating": "IP68",
+   "ik_rating": "IK09",
+   "operating_temperature": "-20°CTO+40°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "10°/15°/25°/45°/60°/120°",
+   "accessories": "NIL",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L70B20@50,000hrs.",
+   "wattage": "8W",
+   "lumen_package": "450lm",
+   "cct": "2700K / 3000K / 4000K / 6500K / RGB / RGBW",
+   "cri": "> 80",
+   "control_gear": "REMOTE (24V DC)",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "2 YEARS"
+  },
+  "options": {
+   "finish": [
+    "STAINLESS STEEL"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K",
+    "6500K",
+    "RGB",
+    "RGBW"
+   ],
+   "beam_angle": [
+    "10°",
+    "15°",
+    "25°",
+    "45°",
+    "60°",
+    "120°"
+   ],
+   "wattage": [
+    "8W"
+   ],
+   "ip_rating": [
+    "IP68"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "Aura -Midi (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Underwater Surface LED Spot –Adjustable –24VDC",
+  "typology": "Underwater Fixture",
+  "product_name": "Riva -Midi",
+  "series": "Riva",
+  "family": "Midi",
+  "variant": "24VDC",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "SURFACE (UNDERWATER)",
+    "MATERIAL": "SUS 316L STAINLESS STEEL SLEEVE",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "STAINLESS STEEL",
+    "ADJUSTABILITY": "ADJUSTABLE",
+    "IPRATING": "IP68",
+    "IKRATING": "IK09",
+    "OPERATINGTEMPERATURE": "-20°CTO+40°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "10°/15°/25°/45°/60°/120°",
+    "ACCESSORIES": "NIL"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L70B20@50,000hrs.",
+    "ACTUALPOWER": "2W",
+    "LUMENPACKAGE": "120 lm",
+    "CCT": "2700K / 3000K / 4000K / 6500K",
+    "CRI": "> 80"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "2 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE (UNDERWATER)",
+   "material": "SUS 316L STAINLESS STEEL SLEEVE",
+   "finish": "STAINLESS STEEL",
+   "adjustability": "ADJUSTABLE",
+   "ip_rating": "IP68",
+   "ik_rating": "IK09",
+   "operating_temperature": "-20°CTO+40°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "10°/15°/25°/45°/60°/120°",
+   "accessories": "NIL",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L70B20@50,000hrs.",
+   "wattage": "2W",
+   "lumen_package": "120 lm",
+   "cct": "2700K / 3000K / 4000K / 6500K",
+   "cri": "> 80",
+   "control_gear": "REMOTE (24V DC)",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "2 YEARS"
+  },
+  "options": {
+   "finish": [
+    "STAINLESS STEEL"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K",
+    "6500K"
+   ],
+   "beam_angle": [
+    "10°",
+    "15°",
+    "25°",
+    "45°",
+    "60°",
+    "120°"
+   ],
+   "wattage": [
+    "2W"
+   ],
+   "ip_rating": [
+    "IP68"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "Riva -Midi (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Underwater Flexible Homogeneous LED Band ( Side Bend )",
+  "typology": "Underwater Fixture",
+  "product_name": "TIDE 1617 SV",
+  "series": "TIDE 1617 SV",
+  "family": "",
+  "variant": "",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 1,
+  "params": {
+   "GENERAL PARAMETERS": {
+    "MOUNTING": "SURFACE / RECESSED",
+    "BENDING DIRECTION": "SIDE BENDING",
+    "MATERIAL": "CHLORINE RESISTANCE< 5PPM,UPTO 5METER DEPTH",
+    "MINIMUM CUT LENGTH": "50mm",
+    "CONTINUOUS RUN": "5 METER (STANDARD)",
+    "IPRATING": "IP68",
+    "IKRATING": "IK10",
+    "OPERATINGTEMPERATURE": "-20°CTO+50°C",
+    "ACCESSORIES": "MOUNTING CLIPS / FLEXIBLE PROFILE / RIGID PC PROFILE / RIGID ALUMINUM PROFILE",
+    "CABLE LEAD OPTION": "FRONT ENTRY / SIDE ENTRY / BOTTOM ENTRY / END CAPS"
+   },
+   "SOURCEPARAMETERS": {
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "5W/M, 10W/M, 15W/M",
+    "LUMENPACKAGE": "257lm/M, 490lm/M, 698lm/M",
+    "CCT": "2700K / 3000K / 4000K / 6500K / TW (2700K –6500K) / RGB",
+    "CRI": "> 90 (R9 > 80)",
+    "BEAM ANGLE": "120°"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "CONTROL": "ON-OFF / 0-10V / DALI",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "2 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE / RECESSED",
+   "material": "CHLORINE RESISTANCE< 5PPM,UPTO 5METER DEPTH",
+   "ip_rating": "IP68",
+   "ik_rating": "IK10",
+   "operating_temperature": "-20°CTO+50°C",
+   "accessories": "MOUNTING CLIPS / FLEXIBLE PROFILE / RIGID PC PROFILE / RIGID ALUMINUM PROFILE",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "5W/M, 10W/M, 15W/M",
+   "lumen_package": "257lm/M, 490lm/M, 698lm/M",
+   "cct": "2700K / 3000K / 4000K / 6500K / TW (2700K –6500K) / RGB",
+   "cri": "> 90 (R9 > 80)",
+   "beam_angle": "120°",
+   "control_gear": "REMOTE (24V DC)",
+   "control": "ON-OFF / 0-10V / DALI",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "2 YEARS"
+  },
+  "options": {
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K",
+    "6500K",
+    "TW (2700K –6500K)",
+    "RGB"
+   ],
+   "beam_angle": [
+    "120°"
+   ],
+   "wattage": [
+    "5W/M",
+    "10W/M",
+    "15W/M"
+   ],
+   "control": [
+    "ON-OFF",
+    "0-10V",
+    "DALI"
+   ],
+   "ip_rating": [
+    "IP68"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "TIDE 1617 SV (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Inground LED Uplight–Fixed –24VDC",
+  "typology": "Uplight",
+  "product_name": "DAWN24 -Midi",
+  "series": "DAWN24",
+  "family": "Midi",
+  "variant": "24VDC",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 3,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "GROUND RECESSED",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "STAINLESS STEEL TRIM",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP67",
+    "IKRATING": "IK10",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "15°/ 24°/ 36°/ 48°/ 120°",
+    "ACCESSORIES": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "9W",
+    "LUMENPACKAGE": "855 lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "GROUND RECESSED",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "STAINLESS STEEL TRIM",
+   "adjustability": "FIXED",
+   "ip_rating": "IP67",
+   "ik_rating": "IK10",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "15°/ 24°/ 36°/ 48°/ 120°",
+   "accessories": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "9W",
+   "lumen_package": "855 lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (24V DC)",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "STAINLESS STEEL TRIM"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°",
+    "48°",
+    "120°"
+   ],
+   "wattage": [
+    "9W"
+   ],
+   "ip_rating": [
+    "IP67"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "DAWN24 -Midi (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Inground LED Uplight–Fixed –24VDC",
+  "typology": "Uplight",
+  "product_name": "DAWN24 -Mini",
+  "series": "DAWN24",
+  "family": "Mini",
+  "variant": "24VDC",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "GROUND RECESSED",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "STAINLESS STEEL TRIM",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP67",
+    "IKRATING": "IK10",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "15°/ 24°/ 36°/ 48°/ 120°",
+    "ACCESSORIES": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "3W",
+    "LUMENPACKAGE": "255 lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "GROUND RECESSED",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "STAINLESS STEEL TRIM",
+   "adjustability": "FIXED",
+   "ip_rating": "IP67",
+   "ik_rating": "IK10",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "15°/ 24°/ 36°/ 48°/ 120°",
+   "accessories": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "3W",
+   "lumen_package": "255 lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (24V DC)",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "STAINLESS STEEL TRIM"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°",
+    "48°",
+    "120°"
+   ],
+   "wattage": [
+    "3W"
+   ],
+   "ip_rating": [
+    "IP67"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "DAWN24 -Mini (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Inground LED Uplight–Fixed –24VDC",
+  "typology": "Uplight",
+  "product_name": "DAWN24 -Small",
+  "series": "DAWN24",
+  "family": "Small",
+  "variant": "24VDC",
+  "environment": [
+   "Exterior"
+  ],
+  "page_number": 2,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "GROUND RECESSED",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "STAINLESS STEEL TRIM",
+    "ADJUSTABILITY": "FIXED",
+    "IPRATING": "IP67",
+    "IKRATING": "IK10",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "BEAMANGLE": "15°/ 24°/ 36°/ 48°/ 120°",
+    "ACCESSORIES": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "6W",
+    "LUMENPACKAGE": "520 lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "GROUND RECESSED",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "STAINLESS STEEL TRIM",
+   "adjustability": "FIXED",
+   "ip_rating": "IP67",
+   "ik_rating": "IK10",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "15°/ 24°/ 36°/ 48°/ 120°",
+   "accessories": "NIL / RECESSING BLOCK / HONEYCOMB / LINEAR MICRO LOUVER / HALFCUT SHIELD / MESH LOUVER",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "6W",
+   "lumen_package": "520 lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (24V DC)",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "STAINLESS STEEL TRIM"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "15°",
+    "24°",
+    "36°",
+    "48°",
+    "120°"
+   ],
+   "wattage": [
+    "6W"
+   ],
+   "ip_rating": [
+    "IP67"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "DAWN24 -Small (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Surface LED Grazer –Fixed / Adjustable",
+  "typology": "Wall Grazer / Wall Washer",
+  "product_name": "GLANCE 1000",
+  "series": "GLANCE 1000",
+  "family": "",
+  "variant": "Fixed / Adjustable",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "MECHANICALPARAMETERS": {
+    "MOUNTING": "SURFACE",
+    "LUMINAIRE LENGTH": "1000 mm",
+    "MATERIAL": "ALUMINIUM ALLOY DIE CAST",
+    "FRONT COVER": "TOUGHENED GLASS",
+    "FINISH": "TEXTURED GREY",
+    "ADJUSTABILITY": "FIXED / ADJUSTABLE",
+    "IPRATING": "IP67",
+    "IKRATING": "IK08",
+    "OPERATINGTEMPERATURE": "-20°CTO+55°C"
+   },
+   "OPTICAL PARAMETERS": {
+    "OPTICSTYPE": "LENS + REFLECTOR",
+    "LENS MATERIAL": "POLYMER OPTIC LENS",
+    "BEAMANGLE": "10°/ 15°/ 25°/ 45°/ 60°/ 120°/ 10x35°/ 10x45°/ 10x60°",
+    "ACCESSORIES": "NIL / HONEYCOMB / ADJUSTABLE MOUNTING BRACKET / LOOPING CABLE"
+   },
+   "SOURCEPARAMETERS": {
+    "SOURCE": "LED",
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "24W / 36W",
+    "LUMENPACKAGE": "1950 lm/ 2880lm",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 90 (R9 > 80)"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC) OR INTEGRATED",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67",
+    "OVERALLWARRANTY": "3 YEARS"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE",
+   "luminaire_length": "1000 mm",
+   "material": "ALUMINIUM ALLOY DIE CAST",
+   "finish": "TEXTURED GREY",
+   "adjustability": "FIXED / ADJUSTABLE",
+   "ip_rating": "IP67",
+   "ik_rating": "IK08",
+   "operating_temperature": "-20°CTO+55°C",
+   "optics_type": "LENS + REFLECTOR",
+   "beam_angle": "10°/ 15°/ 25°/ 45°/ 60°/ 120°/ 10x35°/ 10x45°/ 10x60°",
+   "accessories": "NIL / HONEYCOMB / ADJUSTABLE MOUNTING BRACKET / LOOPING CABLE",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "24W / 36W",
+   "lumen_package": "1950 lm/ 2880lm",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 90 (R9 > 80)",
+   "control_gear": "REMOTE (24V DC) OR INTEGRATED",
+   "input_voltage": "220VAC-240VAC",
+   "warranty": "3 YEARS"
+  },
+  "options": {
+   "finish": [
+    "TEXTURED GREY"
+   ],
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "10°",
+    "15°",
+    "25°",
+    "45°",
+    "60°",
+    "120°",
+    "10x35°",
+    "10x45°",
+    "10x60°"
+   ],
+   "wattage": [
+    "24W",
+    "36W"
+   ],
+   "ip_rating": [
+    "IP67"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "GLANCE 1000 (example).pdf"
+ },
+ {
+  "discipline": "architectural",
+  "category": "Flexible LED Lens Grazer ( Top Bend )",
+  "typology": "Wall Grazer / Wall Washer",
+  "product_name": "SERA 1910 TV",
+  "series": "SERA 1910 TV",
+  "family": "",
+  "variant": "",
+  "environment": [],
+  "page_number": 1,
+  "params": {
+   "GENERAL PARAMETERS": {
+    "MOUNTING": "SURFACE",
+    "BENDING DIRECTION": "TOP BENDING",
+    "MATERIAL": "POLYURETHENE",
+    "MINIMUM CUT LENGTH": "125mm",
+    "CONTINUOUS RUN": "5 METER (STANDARD)",
+    "IPRATING": "IP67",
+    "IKRATING": "IK07",
+    "OPERATINGTEMPERATURE": "-20°CTO+50°C",
+    "ACCESSORIES": "MOUNTING CLIPS / ADJUSTABLE CLIPS / RIGID PROFILE / END CAP",
+    "CABLE LEAD OPTION": "FRONT ENTRY / CLOSED END CAP"
+   },
+   "SOURCEPARAMETERS": {
+    "COLOR CONSISTENCY": "<3 SDCM",
+    "LUMENMAINTENANCE": "L80B10@60,000hrs.",
+    "ACTUALPOWER": "18W/M",
+    "LUMENPACKAGE": "1910lm/M",
+    "CCT": "2700K / 3000K / 4000K",
+    "CRI": "> 90 (R9 > 80)",
+    "BEAM ANGLE": "30°/ 45°/ 60°/ 20°X45°"
+   },
+   "POWERSUPPLYPARAMETERS": {
+    "BALLAST/CONTROLGEAR": "REMOTE (24V DC)",
+    "CONTROL": "ON-OFF / PWM",
+    "C.C/C.V": "C.V",
+    "INPUTVOLTAGE": "220VAC-240VAC",
+    "POWERFACTOR": "0.95",
+    "T.H.D": "<10%",
+    "IPRATING": "IP20 / IP67"
+   }
+  },
+  "fields": {
+   "mounting": "SURFACE",
+   "material": "POLYURETHENE",
+   "ip_rating": "IP67",
+   "ik_rating": "IK07",
+   "operating_temperature": "-20°CTO+50°C",
+   "accessories": "MOUNTING CLIPS / ADJUSTABLE CLIPS / RIGID PROFILE / END CAP",
+   "color_consistency": "<3 SDCM",
+   "lumen_maintenance": "L80B10@60,000hrs.",
+   "wattage": "18W/M",
+   "lumen_package": "1910lm/M",
+   "cct": "2700K / 3000K / 4000K",
+   "cri": "> 90 (R9 > 80)",
+   "beam_angle": "30°/ 45°/ 60°/ 20°X45°",
+   "control_gear": "REMOTE (24V DC)",
+   "control": "ON-OFF / PWM",
+   "input_voltage": "220VAC-240VAC"
+  },
+  "options": {
+   "cct": [
+    "2700K",
+    "3000K",
+    "4000K"
+   ],
+   "beam_angle": [
+    "30°",
+    "45°",
+    "60°",
+    "20°X45°"
+   ],
+   "wattage": [
+    "18W/M"
+   ],
+   "control": [
+    "ON-OFF",
+    "PWM"
+   ],
+   "ip_rating": [
+    "IP67"
+   ]
+  },
+  "make": "InHouse",
+  "filename": "SERA 1910 TV (example).pdf"
+ }
+]

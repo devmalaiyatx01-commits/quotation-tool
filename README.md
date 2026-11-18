@@ -100,8 +100,12 @@ python -m uvicorn app.main:app --reload            # open http://127.0.0.1:8000
 ```
 
 No account is needed: in this prototype every visitor is signed in automatically as a local demo
-administrator (`demo@example.com`). The library starts empty: upload a manufacturer spec sheet PDF
-to begin.
+administrator (`demo@example.com`).
+
+`seed.py` fills an empty library with **16 real example products across 8 typologies** (downlight,
+spotlight, track light, uplight, flexible strip, flexible neon band, wall grazer, underwater),
+parsed by the app's own spec sheet reader. They carry specifications only: no prices, no PDFs or
+pictures, and the brand shows as "InHouse". Upload any manufacturer spec sheet PDF to add more.
 
 * **Sign-in back on:** set `PROTOTYPE_AUTH=on`, create a user with `python create_user.py`, and the
   original password and Google sign-in work exactly as in production. Sign-in is always on when

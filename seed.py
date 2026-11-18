@@ -2,6 +2,7 @@
 database so there's something to test the BOQ builder against on first run.
 Safe to re-run - skips files that are already in the library.
 """
+import json
 from pathlib import Path
 
 from app.database import Base, engine, SessionLocal, UPLOADS_DIR, IMAGES_DIR
@@ -38,10 +39,28 @@ TYPOLOGY_BY_PRODUCT_NAME = {
 # confirmed the constraint against the real product - there is no shortcut for that.
 
 
+EXAMPLES = Path(__file__).resolve().parent / "seed_data" / "example_products.json"
+
+
+def load_example_products(db) -> int:
+    """Prototype only: real products parsed from manufacturer spec sheets, up to three per
+    typology, with their specifications and no prices. Loaded once, into an empty library, so a
+    library someone has filled is never touched."""
+    if not EXAMPLES.exists() or db.query(models.Specsheet).count():
+        return 0
+    rows = json.loads(EXAMPLES.read_text(encoding="utf-8"))
+    for row in rows:
+        db.add(models.Specsheet(**row))
+    db.commit()
+    print(f"loaded {len(rows)} example products (specifications only, no prices)")
+    return len(rows)
+
+
 def main():
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
     try:
+        load_example_products(db)
         existing = {s.filename for s in db.query(models.Specsheet).all()}
         pdfs = sorted(SAMPLE_DIR.glob("*.pdf"))
         if not pdfs:
